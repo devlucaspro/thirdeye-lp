@@ -1,0 +1,120 @@
+@import '../../app.scss';
+
+.home-container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-block: 5rem !important;
+
+  img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover; 
+  }
+
+  .home-texts {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .p-middle {
+      margin-block: 2.5rem;
+      color: $grey;
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: 0.9px;
+      margin-bottom: 1rem;
+    }
+
+    .form-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .8rem;
+
+      input {
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        letter-spacing: 0.9px;
+        padding: 13px 18px;
+        background: $brown;
+        outline: none;
+      }
+
+      button {
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.9px;
+        padding: 13px 18px;
+        background: $orange;
+        color: $brown-dark;
+        cursor: pointer;
+
+        &:hover {
+          filter: opacity(0.8);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    
+    .home-texts {
+
+      .p-middle {
+        font-size: 15px;
+      }
+
+      h3 {
+        width: 90%;
+      }
+
+      .form-div {
+  
+        justify-content: start;
+  
+        input {
+          font-size: 15px;
+          width: 100%;
+          max-width: 300px;
+        }
+  
+        button {
+          font-size: 15px;
+          width: 100%;
+          max-width: 120px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+      font-size: 55px;
+    }
+
+    img {
+      width: 280px;
+    }
+  }
+}
+
+// h1- 70

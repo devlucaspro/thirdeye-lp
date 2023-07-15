@@ -1,0 +1,30 @@
+@import '../../app.scss';
+
+.carousel-container {
+
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+
+  h2 {
+    text-align: center;
+    color: $grey;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 160%; /* 40px */
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    overflow-x: hidden;
+    position: relative;
+
+    border-left: 2px solid $orange;
+    border-right: 2px solid $orange;
+  }
+}

@@ -1,0 +1,146 @@
+@import '../../app.scss';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+  z-index: 9999;
+
+  ul {
+    font-size: 17px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+    z-index: 9999;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+          filter: opacity(0.8);
+        }
+
+        &:hover i {
+          transform: rotate(180deg);
+        }
+
+        i {
+          transition: all .2s;
+        }
+      }
+    }
+
+    .btn-component-mobile {
+      display: none;
+    }
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .active-menu  ul {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+
+    .menu-button {
+      display: flex;
+      gap: 10px;
+      color: $white;
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+
+      .hamb-icon {
+        content: '';
+        margin-top: 4px;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $white;
+        position: relative;
+        transition: all .3s;
+        
+        &::after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: $white;
+          margin-top: 9px;
+          position: relative;
+          transition: all .3s;
+        }
+      }
+    }
+
+    .active-button {
+      color: $grey;
+
+      .hamb-icon {
+        transform: rotate(45deg);
+        top: 4px;
+
+        &::after {
+          transform: rotate(-90deg);
+          top: -9px;
+        }
+      }
+    }
+
+    .btn-component {
+      display: none;
+    }
+
+    img {
+      width: 165px;
+    }
+
+    ul {
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      width: 90%;
+      margin: 0 auto;
+      border: 1px solid $white;
+      border-radius: 30px;
+      background-color: $brown;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem;
+
+      
+      visibility: hidden;
+      opacity: 0;
+      transition: all .3s;
+
+      .btn-component-mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+          filter: opacity(0.8);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    ul {
+      gap: 3rem;
+    }
+  }
+}
