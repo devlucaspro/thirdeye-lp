@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  margin-block: 5rem !important;
+  margin-top: 5rem !important;
+  margin-bottom: 7rem !important;
 
   img {
     width: 100%;
@@ -20,8 +21,15 @@
     flex-direction: column;
     align-items: start;
 
+    .p-coming {
+      font-weight: 600;
+      letter-spacing: '1.25px';
+      margin-bottom: .8rem;
+    }
+
     .p-middle {
-      margin-block: 2.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2.8rem;
       color: $grey;
       font-size: 16px;
     }

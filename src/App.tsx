@@ -22,7 +22,7 @@ const App = () => {
           hasButton={true}
         /> */}
       <Header />
-      <Bar inner='Be the first 100 users to receive a bonus of 15%' />
+      <Bar inner='Be the first 100 users to use ThirdEye' />
       <Home />
       <Carousel />
     </>
