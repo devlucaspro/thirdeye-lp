@@ -1,0 +1,141 @@
+@import '../../app.scss';
+
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+
+  img {
+    width: 100%;
+    max-width: 380px;
+    object-fit: cover; 
+  }
+
+  .description-text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .p-feature {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 160%; /* 28.8px */
+      letter-spacing: 0.9px;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 160%; /* 80px */
+      letter-spacing: 2.5px;
+      text-transform: capitalize;
+    }
+
+    .p-description {
+      color: $grey;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 28.8px */
+      letter-spacing: 0.9px;
+      text-transform: capitalize;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .icons-container {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 5rem;
+
+
+      .div-icon {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1.5rem;
+  
+        i {
+          color: $white;
+        }
+
+        div p {
+          color: $grey;
+          font-size: 15px;
+          text-align: start;
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+
+    .description-text {
+
+      h2 {
+        line-height: 120%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .p-description {
+        font-size: 15px;
+      }
+
+      .icons-container {
+        gap: 2rem;
+
+        .div-icon {
+          gap: 1rem;
+
+          .fa-2x {
+            font-size: 1.5em;
+          }
+
+          div p {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  
+  
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+    img {
+      width: 280px;
+    }
+
+    .description-text {
+      .icons-container {
+        gap: 3rem;
+
+        .div-icon {
+          gap: 1rem;
+
+          .fa-2x {
+            font-size: 1.5em;
+          }
+
+          div p {
+            color: $white;
+            font-size: 13px;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}

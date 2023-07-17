@@ -11,6 +11,7 @@ import Header from './components/Header';
 import Home from './page/Home';
 import Bar from './components/Bar-header';
 import Carousel from './page/Carousel';
+import Description from './page/Description';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Bar inner='Be the first 100 users to use ThirdEye' />
       <Home />
       <Carousel />
+      <Description />
     </>
   )
 }
