@@ -5,6 +5,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-block: 1rem;
+  background-color: $brown-dark;
   z-index: 9999;
 
   ul {
@@ -142,5 +143,20 @@ header {
     ul {
       gap: 3rem;
     }
+  }
+
+
+  .gradient-header {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(50.88% 50.88% at 49.90% 42.95%, rgba(235, 94, 40, 0.24) 0%, rgba(235, 94, 40, 0.00) 94.28%);
+    z-index: -2;
   }
 }

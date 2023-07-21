@@ -1,0 +1,68 @@
+@import '../../app.scss';
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 81px;
+  background: linear-gradient(90deg, #10100F 0%, #1A1A19 100%);
+  z-index: 2;
+  
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  padding: 20px 0;
+
+  a {
+    color: $white;
+    padding: 5px;
+    transition: all .3s;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .border-custom {
+    position: absolute;
+    width: 90%;
+    max-width: 1202px;
+    height: 77px;
+    background: linear-gradient(90deg, #F3F3F3 0%, rgba(243, 243, 243, 0.22) 100%);
+    border-radius: 81px;
+    z-index: -1;
+  }
+
+  .gradient {
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    background-color: $orange;
+    filter: blur(32px);
+    border-radius: 50%;
+    z-index: -2;
+  }
+
+  .g1 {
+    left: 8%;
+    transform: translateY(40px);
+  }
+
+  .g2 {
+    right: 8%;
+    transform: translateY(-40px);
+  }
+
+  .copy {
+    color: #4e4e4e;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+
+    .border-custom {
+      display: none;
+    }
+  }
+}

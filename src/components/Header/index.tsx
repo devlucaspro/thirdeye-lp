@@ -24,6 +24,7 @@ const Header = () => {
       </div>
       <Btn children="Login" hrefProp="https://www.instagram.com/ribeiroo.dev" />
       <button onClick={handleMenu} className='menu-button'>Menu <span className='hamb-icon'></span></button>
+      <span className='gradient-header'></span>
     </header>
   )
 }

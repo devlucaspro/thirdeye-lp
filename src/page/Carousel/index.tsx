@@ -1,11 +1,14 @@
 
 import './carousel.scss';
 
-const Carousel = () => {
+type CarouselProps = {
+  showTitle: boolean;
+}
+const Carousel = ({ showTitle }: CarouselProps) => {
 
   return (
     <>
-      <h2 className='carousel-text'>Trusted by the top companies in the world</h2>
+      {showTitle && <h2 className='carousel-text'>Trusted by the top companies in the world</h2>}
       <div className='carousel-container'>
         <section>
           <img title='3m' src="./assets/3m.svg" alt="3m" />

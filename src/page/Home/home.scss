@@ -20,6 +20,17 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    position: relative;
+
+    .icon-box {
+      position: absolute;
+      width: 50px;
+      margin: 0 1rem;
+      right: 0;
+      top: -30px;
+      z-index: -1;
+      animation: flutter 2s ease infinite alternate;
+    }
 
     .p-coming {
       font-weight: 600;
@@ -40,6 +51,7 @@
       line-height: 160%;
       letter-spacing: 0.9px;
       margin-bottom: 1rem;
+      color: $white;
     }
 
     .form-div {
@@ -125,4 +137,12 @@
   }
 }
 
-// h1- 70
+@keyframes flutter {
+  from {
+    transform: translateY(0);
+    transform: rotate(20deg);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}

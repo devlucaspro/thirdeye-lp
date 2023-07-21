@@ -1,7 +1,6 @@
 // import Studyts from './page/Studyts';
 
 /*
-1- Made with S2 by Lucas Ribeiro
 2- Motion
 3- SEO
 */
@@ -12,6 +11,8 @@ import Home from './page/Home';
 import Bar from './components/Bar-header';
 import Carousel from './page/Carousel';
 import Description from './page/Description';
+import Product from './page/Product';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -25,8 +26,11 @@ const App = () => {
       <Header />
       <Bar inner='Be the first 100 users to use ThirdEye' />
       <Home />
-      <Carousel />
+      <Carousel showTitle={true} />
       <Description />
+      <Product />
+      <Carousel showTitle={false} />
+      <Footer />
     </>
   )
 }
