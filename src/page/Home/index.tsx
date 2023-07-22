@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
 import './home.scss';
 
 const Home = () => {
+
+  useEffect(() => {
+    homeAnimation();
+  }, [])
+  
+  function homeAnimation() {
+    gsap.from('.home-texts', { opacity: 0, duration: 2, y: 100, absolute: true, ease: 'power1.inOut' })
+  }
+  
+
   return (
     <div className='home-container container'>
       <div className="home-texts">

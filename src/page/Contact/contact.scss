@@ -1,0 +1,39 @@
+@import '../../app.scss';
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+
+  a {
+    border: none;
+    border-radius: 47px;
+    background: linear-gradient(90deg, $orange 0%, rgba(235, 94, 40, 0.19) 100%);
+    width: 90%;
+    max-width: 300px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+    color: $white;
+
+    &:hover {
+      background: linear-gradient(90deg, #852C0B 0%, rgba(84, 29, 8, 0.19) 100%);
+    }
+  }
+
+  .svgs-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+}

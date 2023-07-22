@@ -1,0 +1,48 @@
+@import '../../app.scss';
+
+.svg-container {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  // outline: 1px solid red;
+}
+
+.svg {
+  height: 200px;
+  width: 200px;
+  border: 3px solid $orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg1 {
+  opacity: 1;
+}
+
+.svg2 {
+  opacity: 0;
+}
+
+.svg-title {
+  color: $white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 160%; /* 40px */
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-inline: 10px;
+  position: absolute;
+  opacity: 0;
+
+  @media (max-width: 375px) {
+    font-size: 16px;
+  }  
+
+  @media (min-width: 376px) and (max-width: 768px) {
+    font-size: 20px;
+  }
+}

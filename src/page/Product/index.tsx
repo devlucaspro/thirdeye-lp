@@ -1,8 +1,33 @@
+import { useEffect } from "react";
+import { gsap } from 'gsap';
+
 const Product = () => {
+
+  useEffect(() => {
+    productAnimation();
+  }, [])
+
+  function productAnimation() {
+    gsap.registerPlugin(ScrollTrigger);
+  
+    gsap.from('.text-animation2', {
+      scrollTrigger: {
+        trigger: '.text-animation2',
+        start: 'top 90%',
+        end: 'center 20%',
+        scrub: true,
+      },
+      opacity: 0,
+      y: 100,
+      absolute: true
+    })
+  }
+
+
   return (
     <div className='description-container container'>
       <img src="./assets/thirdeye-person.png" alt="Avatar image" />
-      <div className='description-text'>
+      <div className='description-text text-animation2'>
         <p className='orange p-feature'>Feature #2</p>
         <h2>Make your life easy with our product</h2>
         <p className='p-description'>

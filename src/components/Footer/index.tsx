@@ -1,6 +1,7 @@
 import './footer.scss';
 
 const Footer = () => {
+  
   return (
     <footer className='footer-container container'>
       <a href="#">Home</a>

@@ -1,5 +1,3 @@
-// import Studyts from './page/Studyts';
-
 /*
 2- Motion
 3- SEO
@@ -12,17 +10,13 @@ import Bar from './components/Bar-header';
 import Carousel from './page/Carousel';
 import Description from './page/Description';
 import Product from './page/Product';
+import Animation from './page/Animation';
+import Contact from './page/Contact';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
     <>
-        {/* <Studyts 
-          title='Title' 
-          description='Description' 
-          img='./assets/logo.png' 
-          hasButton={true}
-        /> */}
       <Header />
       <Bar inner='Be the first 100 users to use ThirdEye' />
       <Home />
@@ -30,6 +24,8 @@ const App = () => {
       <Description />
       <Product />
       <Carousel showTitle={false} />
+      <Animation />
+      <Contact />
       <Footer />
     </>
   )
