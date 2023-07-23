@@ -1,18 +1,13 @@
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
+
 import './contact.scss';
 
 const Contact = () => {
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-  }, [])
 
   return (
     <div className='container contact-container'>
       <a href='https://www.instagram.com/ribeiroo.dev'>Start using ThirdEye</a>
       <div className='svgs-icons'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="46" viewBox="0 0 47 46" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 47 46" fill="none">
           <path d="M3.91669 5.75H15.6667C17.7442 5.75 19.7367 6.55774 21.2057 7.99551C22.6747 9.43329 23.5 11.3833 23.5 13.4167V40.25C23.5 38.725 22.8811 37.2625 21.7793 36.1841C20.6775 35.1058 19.1832 34.5 17.625 34.5H3.91669V5.75Z" stroke="url(#paint0_linear_30_176)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M43.0833 5.75H31.3333C29.2558 5.75 27.2634 6.55774 25.7943 7.99551C24.3253 9.43329 23.5 11.3833 23.5 13.4167V40.25C23.5 38.725 24.119 37.2625 25.2207 36.1841C26.3225 35.1058 27.8169 34.5 29.375 34.5H43.0833V5.75Z" stroke="url(#paint1_linear_30_176)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <defs>
@@ -26,7 +21,7 @@ const Contact = () => {
             </linearGradient>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 46 46" fill="none">
           <path d="M30.6667 34.5L42.1667 23L30.6667 11.5" stroke="url(#paint0_linear_30_168)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M15.3333 11.5L3.83331 23L15.3333 34.5" stroke="url(#paint1_linear_30_168)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <defs>
@@ -40,7 +35,7 @@ const Contact = () => {
             </linearGradient>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 46 46" fill="none">
           <path d="M42.1666 23H34.5L28.75 40.25L17.25 5.75L11.5 23H3.83331" stroke="url(#paint0_linear_32_104)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <defs>
             <linearGradient id="paint0_linear_32_104" x1="23" y1="5.75" x2="23" y2="40.25" gradientUnits="userSpaceOnUse">
@@ -49,7 +44,7 @@ const Contact = () => {
             </linearGradient>
           </defs>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 46 46" fill="none">
           <path d="M23 36.4167L36.4167 23L42.1667 28.75L28.75 42.1667L23 36.4167Z" stroke="url(#paint0_linear_30_179)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M34.5 24.9166L31.625 10.5416L3.83331 3.83325L10.5416 31.6249L24.9166 34.4999L34.5 24.9166Z" stroke="url(#paint1_linear_30_179)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M3.83331 3.83325L18.3731 18.3731" stroke="url(#paint2_linear_30_179)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

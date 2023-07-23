@@ -1,15 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './animation.scss';
 
 const Animation = () => {
 
+  gsap.registerPlugin(ScrollTrigger);
+  const [hasRendered, setHasRendered] = useState(false);
+
   useEffect(() => {
-    animationGsap();
+    setHasRendered(true);
   }, [])
 
+  useEffect(() => {
+    animationGsap();
+  }, [hasRendered])
+
   function animationGsap() {
-    gsap.registerPlugin(ScrollTrigger);
 
     gsap.to('.svg1', {
       scrollTrigger: {
@@ -40,7 +47,7 @@ const Animation = () => {
         start: 'top center',
         scrub: true,
       },
-      y: 400,
+      y: 480,
       opacity: 1,
     })
 
@@ -50,7 +57,7 @@ const Animation = () => {
         start: 'center center',
         scrub: true,
       },
-      y: 400,
+      y: 480,
       opacity: 1,
     })
   };

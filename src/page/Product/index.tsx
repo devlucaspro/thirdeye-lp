@@ -1,14 +1,16 @@
 import { useEffect } from "react";
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Product = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     productAnimation();
   }, [])
 
   function productAnimation() {
-    gsap.registerPlugin(ScrollTrigger);
   
     gsap.from('.text-animation2', {
       scrollTrigger: {

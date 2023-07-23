@@ -1,8 +1,3 @@
-/*
-2- Motion
-3- SEO
-*/
-
 import './app.scss'
 import Header from './components/Header';
 import Home from './page/Home';

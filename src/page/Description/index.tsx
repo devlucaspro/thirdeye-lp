@@ -1,16 +1,18 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './description.scss';
 
 const Description = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     descAnimation();
   }, [])
   
   function descAnimation() {
-    gsap.registerPlugin(ScrollTrigger);
-
+    
     gsap.from('.text-animation1', {
       scrollTrigger: {
         trigger: '.text-animation1',
