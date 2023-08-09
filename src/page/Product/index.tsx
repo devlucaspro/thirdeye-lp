@@ -20,8 +20,7 @@ const Product = () => {
         scrub: true,
       },
       opacity: 0,
-      y: 100,
-      absolute: true
+      y: 50,
     })
   }
 

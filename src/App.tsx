@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <>
+      <div className='gradient-header'></div>
       <Header />
       <Bar inner='Be the first 100 users to use ThirdEye' />
       <Home />
